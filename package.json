@@ -1,0 +1,23 @@
+{
+  "name": "reimagined-octo-telegram",
+  "version": "1.0.0",
+  "description": "![Design preview for the Bookmark landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass style/main.scss style/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victoryejike/reimagined-octo-telegram.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victoryejike/reimagined-octo-telegram/issues"
+  },
+  "homepage": "https://github.com/victoryejike/reimagined-octo-telegram#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
