@@ -148,6 +148,10 @@ body {
     margin: 60px auto;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.178);
     border-radius: 20px; }
+    @media (min-width: 768px) {
+      .section__extensions .section__extensions__browsers {
+        height: 430px;
+        width: 55%; } }
   .section__extensions .section__extensions__browsers-imgContainer {
     padding: 45px 0px 0px 0px; }
   .section__extensions .section__extensions__browsers__primaryText {
@@ -158,6 +162,10 @@ body {
     background-image: url("/images/bg-dots.svg");
     background-repeat: no-repeat;
     margin: 40px 0px 0px 0px; }
+    @media (min-width: 768px) {
+      .section__extensions .section__extensions__actionContainer {
+        background-repeat: no-repeat;
+        background-position: top center; } }
   .section__extensions .section__extensions__browsers__action {
     font-family: "Rubik", sans-serif;
     padding: 13px 20px;
@@ -168,6 +176,9 @@ body {
     border-radius: 3px;
     color: white;
     background-color: #5368df; }
+    @media (min-width: 768px) {
+      .section__extensions .section__extensions__browsers__action {
+        margin: 40px 0px 40px 0px; } }
 
 .section__faqs {
   width: 85%;
