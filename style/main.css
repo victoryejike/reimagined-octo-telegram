@@ -35,7 +35,8 @@ body {
     border: none;
     outline: none;
     border-radius: 3px;
-    box-shadow: 1px 4px 8px #9194a1; }
+    box-shadow: 1px 4px 8px #9194a1;
+    font-family: "Rubik", sans-serif; }
   .header .header__button--blue {
     background-color: #5368df;
     color: white; }
