@@ -111,6 +111,10 @@ body {
     @media (min-width: 425px) {
       .section__features .section__tabs__tablink--active::after {
         left: 35px; } }
+    @media (max-width: 768px) {
+      .section__features .section__tabs__tablink--active::after {
+        width: 30%;
+        left: 154px; } }
   .section__features .section__bookmark__image,
   .section__features .section__searching__image,
   .section__features .section__sharing__image {
@@ -219,6 +223,15 @@ body {
   .section__newsletter .section__newsletter__primaryText {
     color: white;
     font-weight: 600; }
+  @media (max-width: 768px) {
+    .section__newsletter .section__newsletter__inputContainer {
+      width: 40%; } }
+  @media (max-width: 768px) {
+    .section__newsletter .section__newsletter__cta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px; } }
   .section__newsletter .section__newsletter__inputState {
     width: 80%;
     background-color: #fa5757;
@@ -240,6 +253,10 @@ body {
     border-radius: 5px;
     color: #9194a1;
     font-family: "Rubik", sans-serif; }
+    @media (max-width: 768px) {
+      .section__newsletter .section__newsletter__input {
+        margin: 0;
+        width: 90%; } }
   .section__newsletter .section__newsletter__button {
     font-family: "Rubik", sans-serif;
     padding: 13px 20px;
@@ -250,6 +267,11 @@ body {
     border-radius: 5px;
     color: white;
     background-color: #fa5757; }
+    @media (max-width: 768px) {
+      .section__newsletter .section__newsletter__button {
+        margin: 0;
+        width: 20%;
+        padding: 13px 0px; } }
 
 .footer {
   font-family: "Rubik", sans-serif;

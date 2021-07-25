@@ -181,6 +181,11 @@ body {
     @include responsive(mid-phone) {
       left: 35px;
     }
+
+    @include responsive(tab-port) {
+      width: 30%;
+      left: 154px;
+    }
   }
 
   .section__bookmark__image,
@@ -333,6 +338,21 @@ body {
     font-weight: 600;
   }
 
+  .section__newsletter__inputContainer {
+    @include responsive(tab-port) {
+      width: 40%;
+    }
+  }
+
+  .section__newsletter__cta {
+    @include responsive(tab-port) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+    }
+  }
+
   .section__newsletter__inputState {
     width: 80%;
     background-color: $color-primary-red;
@@ -356,6 +376,11 @@ body {
     border-radius: 5px;
     color: $color-gray-blue;
     font-family: "Rubik", sans-serif;
+
+    @include responsive(tab-port) {
+      margin: 0;
+      width: 90%;
+    }
   }
 
   .section__newsletter__button {
@@ -368,6 +393,12 @@ body {
     border-radius: 5px;
     color: white;
     background-color: $color-primary-red;
+
+    @include responsive(tab-port) {
+      margin: 0;
+      width: 20%;
+      padding: 13px 0px;
+    }
   }
 }
 
