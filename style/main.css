@@ -111,7 +111,7 @@ body {
     @media (min-width: 425px) {
       .section__features .section__tabs__tablink--active::after {
         left: 35px; } }
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
       .section__features .section__tabs__tablink--active::after {
         width: 30%;
         left: 154px; } }
@@ -223,10 +223,10 @@ body {
   .section__newsletter .section__newsletter__primaryText {
     color: white;
     font-weight: 600; }
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     .section__newsletter .section__newsletter__inputContainer {
       width: 40%; } }
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     .section__newsletter .section__newsletter__cta {
       display: flex;
       justify-content: center;
@@ -253,7 +253,7 @@ body {
     border-radius: 5px;
     color: #9194a1;
     font-family: "Rubik", sans-serif; }
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
       .section__newsletter .section__newsletter__input {
         margin: 0;
         width: 90%; } }
@@ -267,7 +267,7 @@ body {
     border-radius: 5px;
     color: white;
     background-color: #fa5757; }
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
       .section__newsletter .section__newsletter__button {
         margin: 0;
         width: 20%;

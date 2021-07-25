@@ -26,17 +26,17 @@ big-desktop = min-width: 1440px;
     }
   }
   @if $Breakpoint == tab-port {
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
       @content;
     }
   }
   @if $Breakpoint == tab-land {
-    @media (max-width: 1024px) {
+    @media (min-width: 1024px) {
       @content;
     }
   }
   @if $Breakpoint == big-desktop {
-    @media (max-width: 1440px) {
+    @media (min-width: 1440px) {
       @content;
     }
   }
