@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+/*
+BreakPoints
+phone = max-width: 320px;
+mid-phone = min-width: 420px;
+tab-port = min-width: 728px;
+tab-land = min-width: 1024px;
+big-desktop = min-width: 1440px;
+*/
 * {
   margin: 0;
   padding: 0;
@@ -37,9 +45,17 @@ body {
     border-radius: 3px;
     box-shadow: 1px 4px 8px #9194a1;
     font-family: "Rubik", sans-serif; }
+    @media (max-width: 320px) {
+      .header .header__button {
+        width: 70%;
+        margin: 0 auto;
+        box-shadow: 2px -4px 10px #9194a1; } }
   .header .header__button--blue {
     background-color: #5368df;
     color: white; }
+    @media (max-width: 320px) {
+      .header .header__button--blue {
+        margin-bottom: 10px; } }
   .header .header__button--grey {
     color: #9194a1;
     background-color: white; }
@@ -73,18 +89,28 @@ body {
     background-color: inherit;
     border: none;
     border-bottom: 1px solid #9194a1; }
+    .section__features .section__tabs__tablink > div {
+      width: 70%;
+      margin: 0 auto; }
   .section__features .section__tabs__tablink--active {
-    color: #252b46; }
+    color: #252b46;
+    position: relative; }
   .section__features .section__tabs__tablink--active::after {
     content: "";
     position: absolute;
     display: block;
-    width: 32%;
+    width: 70%;
     height: 3px;
     color: #fa5757;
     background-color: #fa5757;
-    bottom: 0;
-    left: 109px; }
+    top: 27px;
+    left: 31px; }
+    @media (max-width: 320px) {
+      .section__features .section__tabs__tablink--active::after {
+        left: 27px; } }
+    @media (min-width: 425px) {
+      .section__features .section__tabs__tablink--active::after {
+        left: 35px; } }
   .section__features .section__bookmark__image,
   .section__features .section__searching__image,
   .section__features .section__sharing__image {

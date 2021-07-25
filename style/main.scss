@@ -5,6 +5,43 @@ $color-primary-red: hsl(0, 94%, 66%);
 $color-gray-blue: hsl(229, 8%, 60%);
 $color-dark-blue: hsl(229, 31%, 21%);
 
+/*
+BreakPoints
+phone = max-width: 320px;
+mid-phone = min-width: 420px;
+tab-port = min-width: 728px;
+tab-land = min-width: 1024px;
+big-desktop = min-width: 1440px;
+*/
+
+@mixin responsive($Breakpoint) {
+  @if $Breakpoint == phone {
+    @media (max-width: 320px) {
+      @content;
+    }
+  }
+  @if $Breakpoint == mid-phone {
+    @media (min-width: 425px) {
+      @content;
+    }
+  }
+  @if $Breakpoint == tab-port {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $Breakpoint == tab-land {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  @if $Breakpoint == big-desktop {
+    @media (max-width: 1440px) {
+      @content;
+    }
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -53,11 +90,21 @@ body {
     border-radius: 3px;
     box-shadow: 1px 4px 8px $color-gray-blue;
     font-family: "Rubik", sans-serif;
+
+    @include responsive(phone) {
+      width: 70%;
+      margin: 0 auto;
+      box-shadow: 2px -4px 10px $color-gray-blue;
+    }
   }
 
   .header__button--blue {
     background-color: $color-primary-blue;
     color: white;
+
+    @include responsive(phone) {
+      margin-bottom: 10px;
+    }
   }
 
   .header__button--grey {
@@ -104,22 +151,36 @@ body {
     background-color: inherit;
     border: none;
     border-bottom: 1px solid $color-gray-blue;
+
+    & > div {
+      width: 70%;
+      margin: 0 auto;
+    }
   }
 
   .section__tabs__tablink--active {
     color: $color-dark-blue;
+    position: relative;
   }
 
   .section__tabs__tablink--active::after {
     content: "";
     position: absolute;
     display: block;
-    width: 32%;
+    width: 70%;
     height: 3px;
     color: $color-primary-red;
     background-color: $color-primary-red;
-    bottom: 0;
-    left: 109px;
+    top: 27px;
+    left: 31px;
+
+    @include responsive(phone) {
+      left: 27px;
+    }
+
+    @include responsive(mid-phone) {
+      left: 35px;
+    }
   }
 
   .section__bookmark__image,
