@@ -60,13 +60,13 @@
       Your bookmarks sync between your devices so you can access them on the go.
     </p>
     <div class="section__tabs">
-      <button class="section__tabs__tablink section__tabs__tablink--transparent">
+      <button class="section__tabs__tablink section__tabs__tablink--active">
         Simple Bookmarking
       </button>
-      <button class="section__tabs__tablink section__tabs__tablink--transparent">
+      <button class="section__tabs__tablink">
         Speedy Searching
       </button>
-      <button class="section__tabs__tablink section__tabs__tablink--transparent">
+      <button class="section__tabs__tablink">
         Easy Sharing
       </button>
     </div>
@@ -130,9 +130,11 @@
       <p class="section__extensions__browsers__secondaryText">
         Minimum version 62
       </p>
-      <button class="section__extensions__browsers__action">
-        Add & Install Extension
-      </button>
+      <div class="section__extensions__actionContainer">
+        <button class="section__extensions__browsers__action">
+          Add & Install Extension
+        </button>
+      </div>
     </div>
     <div class="section__extensions__browsers">
       <div class="section__extensions__browsers-imgContainer">
@@ -144,9 +146,11 @@
       <p class="section__extensions__browsers__secondaryText">
         Minimum version 55
       </p>
-      <button class="section__extensions__browsers__action">
-        Add & Install Extension
-      </button>
+      <div class="section__extensions__actionContainer">
+        <button class="section__extensions__browsers__action">
+          Add & Install Extension
+        </button>
+      </div>
     </div>
     <div class="section__extensions__browsers">
       <div class="section__extensions__browsers-imgContainer">
@@ -158,9 +162,11 @@
       <p class="section__extensions__browsers__secondaryText">
         Minimum version 46
       </p>
-      <button class="section__extensions__browsers__action">
-        Add & Install Extension
-      </button>
+      <div class="section__extensions__actionContainer">
+        <button class="section__extensions__browsers__action">
+          Add & Install Extension
+        </button>
+      </div>
     </div>
   </section>
   <!-- Extensions Section End -->
@@ -177,6 +183,7 @@
     <div class="section__accordion">
       <button class="section__accordion__button">
         What is Bookmark?
+        <div class="section__accordion__arrowContainer"><img src="/images/icon-arrow.svg" alt="open-close button" class="section__accordion__arrow"</div>
       </button>
       <div class="section__accordion__content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
@@ -184,6 +191,7 @@
       </div>
       <button class="section__accordion__button">
         How can I request a new browser?
+        <div class="section__accordion__arrowContainer"><img src="/images/icon-arrow.svg" alt="open-close button" class="section__accordion__arrow"</div>
       </button>
       <div class="section__accordion__content">
         Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
@@ -193,6 +201,7 @@
       </div>
       <button class="section__accordion__button">
         Is there a mobile app?
+        <div class="section__accordion__arrowContainer"><img src="/images/icon-arrow.svg" alt="open-close button" class="section__accordion__arrow"</div>
       </button>
       <div class="section__accordion__content">
         Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
@@ -201,6 +210,7 @@
       </div>
       <button class="section__accordion__button">
         What about other Chromium browsers?
+        <div class="section__accordion__arrowContainer"><img src="/images/icon-arrow.svg" alt="open-close button" class="section__accordion__arrow"</div>
       </button>
       <div class="section__accordion__content">
         Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
@@ -214,9 +224,9 @@
   <!-- Newsletter Section Start -->
   <section class="section__newsletter">
     <p class="section__newsletter__secondaryText">35,000+ already joined</p>
-    <h2 class="section__newsletter__primaryText">Stay up-to-date with what we’re doing</h2>
+    <h2 class="section__newsletter__primaryText">Stay up-to-date with what <br> we’re doing</h2>
     <div class="section__newsletter__inputContainer">
-      <input type="email" name="email" class="section__newsletter__input">
+      <input type="email" name="email" class="section__newsletter__input" placeholder="Enter your email address">
       <p class="section__newsletter__error"></p>
     </div>
     <button class="section__newsletter__button">Contact Us</button>
