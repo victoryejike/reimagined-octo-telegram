@@ -60,6 +60,39 @@ body {
   padding: 20px 0px;
   width: 85%;
   margin: 0 auto;
+
+  @include responsive(tab-land) {
+    padding: 35px 0px;
+  }
+
+  .nav__hamburger-menu {
+    @include responsive(tab-land) {
+      display: none;
+    }
+  }
+
+  .nav__desktop {
+    display: none;
+
+    .nav__desktop__links {
+      margin: 0px 10px;
+      text-decoration: none;
+      color: inherit;
+      font-size: 14px;
+
+      &:last-child {
+        background-color: $color-primary-red;
+        color: white;
+        padding: 5px 19px;
+        border-radius: 2px;
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.151);
+      }
+    }
+
+    @include responsive(tab-land) {
+      display: block;
+    }
+  }
 }
 
 .header {
@@ -68,11 +101,37 @@ body {
   margin: 0 auto;
   margin-bottom: 40px;
 
+  @include responsive(tab-land) {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 30px;
+  }
+
+  .header__hero-container {
+    @include responsive(tab-land) {
+      width: 45%;
+    }
+  }
+
   .header__hero-container__img {
     max-width: 100%;
+
+    @include responsive(tab-land) {
+      max-width: 107%;
+    }
+  }
+
+  .header__hero-text {
+    @include responsive(tab-land) {
+      width: 50%;
+    }
   }
 
   .header__text {
+    letter-spacing: 1px;
     color: $color-dark-blue;
     font-weight: 600;
   }
@@ -95,6 +154,11 @@ body {
       width: 70%;
       margin: 0 auto;
       box-shadow: 2px -4px 10px $color-gray-blue;
+    }
+
+    @include responsive(tab-land) {
+      margin: 0px;
+      margin-right: 5px;
     }
   }
 

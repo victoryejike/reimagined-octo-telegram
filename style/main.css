@@ -23,15 +23,55 @@ body {
   padding: 20px 0px;
   width: 85%;
   margin: 0 auto; }
+  @media (min-width: 1024px) {
+    .nav {
+      padding: 35px 0px; } }
+  @media (min-width: 1024px) {
+    .nav .nav__hamburger-menu {
+      display: none; } }
+  .nav .nav__desktop {
+    display: none; }
+    .nav .nav__desktop .nav__desktop__links {
+      margin: 0px 10px;
+      text-decoration: none;
+      color: inherit;
+      font-size: 14px; }
+      .nav .nav__desktop .nav__desktop__links:last-child {
+        background-color: #fa5757;
+        color: white;
+        padding: 5px 19px;
+        border-radius: 2px;
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.151); }
+    @media (min-width: 1024px) {
+      .nav .nav__desktop {
+        display: block; } }
 
 .header {
   text-align: center;
   width: 85%;
   margin: 0 auto;
   margin-bottom: 40px; }
+  @media (min-width: 1024px) {
+    .header {
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
+      margin-top: 30px; } }
+  @media (min-width: 1024px) {
+    .header .header__hero-container {
+      width: 45%; } }
   .header .header__hero-container__img {
     max-width: 100%; }
+    @media (min-width: 1024px) {
+      .header .header__hero-container__img {
+        max-width: 107%; } }
+  @media (min-width: 1024px) {
+    .header .header__hero-text {
+      width: 50%; } }
   .header .header__text {
+    letter-spacing: 1px;
     color: #252b46;
     font-weight: 600; }
   .header .header__text-body {
@@ -50,6 +90,10 @@ body {
         width: 70%;
         margin: 0 auto;
         box-shadow: 2px -4px 10px #9194a1; } }
+    @media (min-width: 1024px) {
+      .header .header__button {
+        margin: 0px;
+        margin-right: 5px; } }
   .header .header__button--blue {
     background-color: #5368df;
     color: white; }
