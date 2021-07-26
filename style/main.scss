@@ -197,10 +197,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include responsive(tab-land) {
+      flex-direction: row;
+    }
   }
 
   .section__tabs__tablink:first-child {
     border-top: 1px solid $color-gray-blue;
+
+    @include responsive(tab-land) {
+      border-top: none;
+    }
   }
 
   .section__tabs__tablink {
@@ -252,11 +260,39 @@ body {
     }
   }
 
+  .section__tabcontent {
+    @include responsive(tab-port) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+    }
+  }
+
+  .section__bookmark__imageContainer,
+  .section__searching__imageContainer,
+  .section__sharing__imageContainer {
+    @include responsive(tab-land) {
+      width: 70%;
+    }
+  }
+
+  .section__textContent {
+    @include responsive(tab-land) {
+      width: 70%;
+      margin-left: 100px;
+    }
+  }
+
   .section__bookmark__image,
   .section__searching__image,
   .section__sharing__image {
     max-width: 100%;
     margin: 50px 0;
+
+    // @include responsive(tab-port) {
+    //   max-width: 105%;
+    // }
   }
 
   .section__bookmark-header-text,
