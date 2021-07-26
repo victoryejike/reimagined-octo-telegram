@@ -139,6 +139,7 @@ body {
   .header__text-body {
     color: $color-gray-blue;
     margin: 20px 0px;
+    line-height: 26px;
   }
 
   .header__button {
@@ -190,6 +191,12 @@ body {
   .section__section-body-text {
     color: $color-gray-blue;
     margin: 20px 0px;
+    line-height: 26px;
+
+    @include responsive(tab-land) {
+      width: 40%;
+      margin: 20px auto;
+    }
   }
 
   .section__tabs {
@@ -200,6 +207,8 @@ body {
 
     @include responsive(tab-land) {
       flex-direction: row;
+      width: 58%;
+      margin: 0 auto;
     }
   }
 
@@ -258,6 +267,11 @@ body {
       width: 30%;
       left: 154px;
     }
+
+    @include responsive(tab-land) {
+      width: 100%;
+      left: 0;
+    }
   }
 
   .section__tabcontent {
@@ -307,6 +321,7 @@ body {
   .section__sharing-body-text {
     color: $color-gray-blue;
     margin: 20px 0px;
+    line-height: 26px;
   }
 }
 
@@ -325,6 +340,12 @@ body {
   .section__extensions__browsers__secondaryText {
     color: $color-gray-blue;
     margin: 20px 0px;
+    line-height: 26px;
+
+    @include responsive(tab-land) {
+      width: 40%;
+      margin: 20px auto;
+    }
   }
 
   .section__extensions__browsers {
@@ -337,10 +358,36 @@ body {
       height: 430px;
       width: 55%;
     }
+
+    @include responsive(tab-land) {
+      width: 30%;
+    }
+
+    &:nth-child(2) {
+      @include responsive(tab-land) {
+        margin: 100px 35px 0px 0px;
+      }
+    }
+
+    &:last-child {
+      @include responsive(tab-land) {
+        margin: 190px 0px 0px 0px;
+      }
+    }
   }
 
   .section__extensions__browsers-imgContainer {
     padding: 45px 0px 0px 0px;
+  }
+
+  .section__extensions__browsers__container {
+    @include responsive(tab-land) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 
   .section__extensions__browsers__primaryText {
@@ -349,6 +396,10 @@ body {
 
   .section__extensions__browsers__secondaryText {
     margin: 10px 0px;
+
+    @include responsive(tab-land) {
+      width: 100%;
+    }
   }
 
   .section__extensions__actionContainer {
@@ -393,6 +444,7 @@ body {
   .section__faqs-body-text {
     color: $color-gray-blue;
     margin: 20px 0px;
+    line-height: 26px;
   }
 
   .section__accordion {
