@@ -445,10 +445,20 @@ body {
     color: $color-gray-blue;
     margin: 20px 0px;
     line-height: 26px;
+
+    @include responsive(tab-port) {
+      width: 34%;
+      margin: 20px auto;
+    }
   }
 
   .section__accordion {
     text-align: left;
+
+    @include responsive(tab-port) {
+      width: 40%;
+      margin: 20px auto;
+    }
   }
 
   .section__accordion__button {
@@ -563,6 +573,12 @@ body {
     @include responsive(tab-port) {
       margin: 0;
       width: 20%;
+      padding: 13px 0px;
+    }
+
+    @include responsive(tab-land) {
+      margin: 0;
+      width: 10%;
       padding: 13px 0px;
     }
   }

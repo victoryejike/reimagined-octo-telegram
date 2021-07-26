@@ -295,8 +295,16 @@ body {
     color: #9194a1;
     margin: 20px 0px;
     line-height: 26px; }
+    @media (min-width: 768px) {
+      .section__faqs .section__faqs-body-text {
+        width: 34%;
+        margin: 20px auto; } }
   .section__faqs .section__accordion {
     text-align: left; }
+    @media (min-width: 768px) {
+      .section__faqs .section__accordion {
+        width: 40%;
+        margin: 20px auto; } }
   .section__faqs .section__accordion__button {
     font-family: "Rubik", sans-serif;
     text-align: left;
@@ -386,6 +394,11 @@ body {
       .section__newsletter .section__newsletter__button {
         margin: 0;
         width: 20%;
+        padding: 13px 0px; } }
+    @media (min-width: 1024px) {
+      .section__newsletter .section__newsletter__button {
+        margin: 0;
+        width: 10%;
         padding: 13px 0px; } }
 
 .footer {
