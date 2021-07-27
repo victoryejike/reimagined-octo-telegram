@@ -58,7 +58,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px;
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 
   @include responsive(tab-land) {
@@ -97,7 +97,7 @@ body {
 
 .header {
   text-align: center;
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 40px;
 
@@ -150,6 +150,7 @@ body {
     border-radius: 3px;
     box-shadow: 1px 4px 8px $color-gray-blue;
     font-family: "Rubik", sans-serif;
+    cursor: pointer;
 
     @include responsive(phone) {
       width: 70%;
@@ -180,7 +181,7 @@ body {
 
 .section__features {
   text-align: center;
-  width: 85%;
+  width: 80%;
   margin: 50px auto;
 
   .section__section-header-text {
@@ -236,6 +237,7 @@ body {
     & > div {
       width: 70%;
       margin: 0 auto;
+      cursor: pointer;
     }
   }
 
@@ -280,6 +282,11 @@ body {
       justify-content: center;
       align-items: center;
       text-align: left;
+    }
+
+    @include responsive(tab-land) {
+      width: 89%;
+      margin: 0 auto;
     }
   }
 
@@ -326,7 +333,7 @@ body {
 }
 
 .section__extensions {
-  width: 85%;
+  width: 80%;
   margin: 90px auto;
   text-align: center;
 
@@ -360,12 +367,12 @@ body {
     }
 
     @include responsive(tab-land) {
-      width: 30%;
+      width: 28%;
     }
 
     &:nth-child(2) {
       @include responsive(tab-land) {
-        margin: 100px 35px 0px 0px;
+        margin: 100px 63px 0px 0px;
       }
     }
 
@@ -385,7 +392,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 80%;
+      width: 87%;
       margin: 0 auto;
     }
   }
@@ -423,6 +430,7 @@ body {
     border-radius: 3px;
     color: white;
     background-color: $color-primary-blue;
+    cursor: pointer;
 
     @include responsive(tab-port) {
       margin: 40px 0px 40px 0px;
@@ -431,7 +439,7 @@ body {
 }
 
 .section__faqs {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
   padding: 70px 0px;
@@ -455,7 +463,7 @@ body {
   .section__accordion {
     text-align: left;
 
-    @include responsive(tab-port) {
+    @include responsive(tab-land) {
       width: 40%;
       margin: 20px auto;
     }
@@ -476,6 +484,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
   }
 
   .section__accordion__content {
@@ -492,6 +501,7 @@ body {
     box-shadow: 1px 4px 8px $color-gray-blue;
     background-color: $color-primary-blue;
     color: white;
+    cursor: pointer;
   }
 }
 
@@ -569,6 +579,7 @@ body {
     border-radius: 5px;
     color: white;
     background-color: $color-primary-red;
+    cursor: pointer;
 
     @include responsive(tab-port) {
       margin: 0;
@@ -640,6 +651,7 @@ body {
     .footer__socials__iconContainer {
       @include responsive(tab-port) {
         padding-right: 10px;
+        cursor: pointer;
       }
     }
   }

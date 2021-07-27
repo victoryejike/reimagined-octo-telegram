@@ -21,7 +21,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px;
-  width: 85%;
+  width: 80%;
   margin: 0 auto; }
   @media (min-width: 1024px) {
     .nav {
@@ -48,7 +48,7 @@ body {
 
 .header {
   text-align: center;
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 40px; }
   @media (min-width: 1024px) {
@@ -85,7 +85,8 @@ body {
     outline: none;
     border-radius: 3px;
     box-shadow: 1px 4px 8px #9194a1;
-    font-family: "Rubik", sans-serif; }
+    font-family: "Rubik", sans-serif;
+    cursor: pointer; }
     @media (max-width: 320px) {
       .header .header__button {
         width: 70%;
@@ -107,7 +108,7 @@ body {
 
 .section__features {
   text-align: center;
-  width: 85%;
+  width: 80%;
   margin: 50px auto; }
   .section__features .section__section-header-text {
     color: #252b46;
@@ -149,7 +150,8 @@ body {
     border-bottom: 1px solid #9194a1; }
     .section__features .section__tabs__tablink > div {
       width: 70%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      cursor: pointer; }
   .section__features .section__tabs__tablink--active {
     color: #252b46;
     position: relative; }
@@ -184,6 +186,10 @@ body {
       align-items: center;
       text-align: left; } }
   @media (min-width: 1024px) {
+    .section__features .section__tabcontent {
+      width: 89%;
+      margin: 0 auto; } }
+  @media (min-width: 1024px) {
     .section__features .section__bookmark__imageContainer,
     .section__features .section__searching__imageContainer,
     .section__features .section__sharing__imageContainer {
@@ -210,7 +216,7 @@ body {
     line-height: 26px; }
 
 .section__extensions {
-  width: 85%;
+  width: 80%;
   margin: 90px auto;
   text-align: center; }
   .section__extensions .section__extensions__header-text,
@@ -238,10 +244,10 @@ body {
         width: 55%; } }
     @media (min-width: 1024px) {
       .section__extensions .section__extensions__browsers {
-        width: 30%; } }
+        width: 28%; } }
     @media (min-width: 1024px) {
       .section__extensions .section__extensions__browsers:nth-child(2) {
-        margin: 100px 35px 0px 0px; } }
+        margin: 100px 63px 0px 0px; } }
     @media (min-width: 1024px) {
       .section__extensions .section__extensions__browsers:last-child {
         margin: 190px 0px 0px 0px; } }
@@ -252,7 +258,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 80%;
+      width: 87%;
       margin: 0 auto; } }
   .section__extensions .section__extensions__browsers__primaryText {
     padding: 28px 0px 0px 0px; }
@@ -278,13 +284,14 @@ body {
     outline: none;
     border-radius: 3px;
     color: white;
-    background-color: #5368df; }
+    background-color: #5368df;
+    cursor: pointer; }
     @media (min-width: 768px) {
       .section__extensions .section__extensions__browsers__action {
         margin: 40px 0px 40px 0px; } }
 
 .section__faqs {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
   padding: 70px 0px; }
@@ -301,7 +308,7 @@ body {
         margin: 20px auto; } }
   .section__faqs .section__accordion {
     text-align: left; }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       .section__faqs .section__accordion {
         width: 40%;
         margin: 20px auto; } }
@@ -319,7 +326,8 @@ body {
     border-bottom: 1px solid #9194a1;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    cursor: pointer; }
   .section__faqs .section__accordion__content {
     display: none; }
   .section__faqs .section__accordion__buttonInfo {
@@ -331,7 +339,8 @@ body {
     border-radius: 3px;
     box-shadow: 1px 4px 8px #9194a1;
     background-color: #5368df;
-    color: white; }
+    color: white;
+    cursor: pointer; }
 
 .section__newsletter {
   text-align: center;
@@ -389,7 +398,8 @@ body {
     outline: none;
     border-radius: 5px;
     color: white;
-    background-color: #fa5757; }
+    background-color: #fa5757;
+    cursor: pointer; }
     @media (min-width: 768px) {
       .section__newsletter .section__newsletter__button {
         margin: 0;
@@ -442,4 +452,5 @@ body {
         justify-content: flex-end; } }
     @media (min-width: 768px) {
       .footer .footer__socials .footer__socials__iconContainer {
-        padding-right: 10px; } }
+        padding-right: 10px;
+        cursor: pointer; } }
