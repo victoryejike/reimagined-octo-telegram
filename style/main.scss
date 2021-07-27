@@ -75,17 +75,30 @@ body {
     display: none;
 
     .nav__desktop__links {
-      margin: 0px 10px;
+      margin: 0px 19px;
       text-decoration: none;
       color: inherit;
       font-size: 14px;
+
+      &:hover {
+        color: $color-primary-red;
+      }
 
       &:last-child {
         background-color: $color-primary-red;
         color: white;
         padding: 5px 19px;
-        border-radius: 2px;
+        border-radius: 4px;
+        border: 2px solid transparent;
         box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.151);
+        font-weight: 400;
+
+        &:hover {
+          border: 2px solid $color-primary-red;
+          background-color: white;
+          color: $color-primary-red;
+          font-weight: 400;
+        }
       }
     }
 
@@ -112,7 +125,7 @@ body {
 
   .header__hero-container {
     @include responsive(tab-land) {
-      width: 45%;
+      width: 49%;
     }
   }
 
@@ -147,7 +160,7 @@ body {
     margin: 0px 5px;
     border: none;
     outline: none;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 1px 4px 8px $color-gray-blue;
     font-family: "Rubik", sans-serif;
     cursor: pointer;
@@ -167,6 +180,14 @@ body {
   .header__button--blue {
     background-color: $color-primary-blue;
     color: white;
+    border: 2px solid transparent;
+
+    &:hover {
+      color: $color-primary-blue;
+      background-color: white;
+      border: 2px solid $color-primary-blue;
+      font-weight: 500;
+    }
 
     @include responsive(phone) {
       margin-bottom: 10px;
@@ -176,6 +197,14 @@ body {
   .header__button--grey {
     color: $color-gray-blue;
     background-color: white;
+    border: 2px solid transparent;
+
+    &:hover {
+      color: $color-gray-blue;
+      background-color: white;
+      border: 2px solid $color-gray-blue;
+      font-weight: 500;
+    }
   }
 }
 
@@ -238,6 +267,10 @@ body {
       width: 70%;
       margin: 0 auto;
       cursor: pointer;
+
+      &:hover {
+        color: $color-primary-red;
+      }
     }
   }
 
@@ -432,6 +465,13 @@ body {
     background-color: $color-primary-blue;
     cursor: pointer;
 
+    &:hover {
+      background-color: white;
+      border: 2px solid $color-primary-blue;
+      color: $color-primary-blue;
+      font-weight: 500;
+    }
+
     @include responsive(tab-port) {
       margin: 40px 0px 40px 0px;
     }
@@ -464,7 +504,7 @@ body {
     text-align: left;
 
     @include responsive(tab-land) {
-      width: 40%;
+      width: 47%;
       margin: 20px auto;
     }
   }
@@ -485,10 +525,15 @@ body {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+
+    &:hover {
+      color: $color-primary-red;
+    }
   }
 
   .section__accordion__content {
     display: none;
+    width: inherit;
   }
 
   .section__accordion__buttonInfo {
@@ -571,15 +616,22 @@ body {
 
   .section__newsletter__button {
     font-family: "Rubik", sans-serif;
-    padding: 13px 20px;
+    padding: 14px 20px;
     width: 80%;
     margin: 10px 0px 50px 0px;
-    border: none;
+    border: 2px solid transparent;
     outline: none;
     border-radius: 5px;
     color: white;
     background-color: $color-primary-red;
     cursor: pointer;
+
+    &:hover {
+      background-color: white;
+      color: $color-primary-red;
+      border: 2px solid $color-primary-red;
+      font-weight: 500;
+    }
 
     @include responsive(tab-port) {
       margin: 0;
@@ -624,6 +676,10 @@ body {
     padding: 10px 0px;
     display: block;
 
+    &:hover {
+      color: $color-primary-red;
+    }
+
     @include responsive(tab-port) {
       padding: 0px 10px;
     }
@@ -653,6 +709,10 @@ body {
         padding-right: 10px;
         cursor: pointer;
       }
+    }
+
+    .footer__socials__icon:hover {
+      color: $color-primary-red;
     }
   }
 }
