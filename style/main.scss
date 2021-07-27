@@ -312,7 +312,7 @@ body {
   .section__tabcontent {
     @include responsive(tab-port) {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       text-align: left;
     }
@@ -323,15 +323,28 @@ body {
     }
   }
 
+  .section__tabcontent__hide {
+    display: none;
+  }
+
   .section__bookmark__imageContainer,
   .section__searching__imageContainer,
   .section__sharing__imageContainer {
+    @include responsive(tab-port) {
+      width: 80%;
+    }
+
     @include responsive(tab-land) {
       width: 70%;
     }
   }
 
   .section__textContent {
+    @include responsive(tab-port) {
+      width: 80%;
+      margin-left: 30px;
+    }
+
     @include responsive(tab-land) {
       width: 70%;
       margin-left: 100px;
