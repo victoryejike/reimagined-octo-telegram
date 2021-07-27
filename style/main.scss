@@ -376,6 +376,24 @@ body {
     margin: 20px 0px;
     line-height: 26px;
   }
+
+  .section__desk__button {
+    display: none;
+
+    @include responsive(tab-land) {
+      display: block;
+      font-family: "Rubik", sans-serif;
+      padding: 13px 18px;
+      margin: 40px 0px;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+      box-shadow: 1px 4px 8px $color-gray-blue;
+      background-color: $color-primary-blue;
+      color: white;
+      cursor: pointer;
+    }
+  }
 }
 
 .section__extensions {

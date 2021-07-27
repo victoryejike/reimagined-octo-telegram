@@ -248,6 +248,21 @@ body {
     color: #9194a1;
     margin: 20px 0px;
     line-height: 26px; }
+  .section__features .section__desk__button {
+    display: none; }
+    @media (min-width: 1024px) {
+      .section__features .section__desk__button {
+        display: block;
+        font-family: "Rubik", sans-serif;
+        padding: 13px 18px;
+        margin: 40px 0px;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        box-shadow: 1px 4px 8px #9194a1;
+        background-color: #5368df;
+        color: white;
+        cursor: pointer; } }
 
 .section__extensions {
   width: 80%;
